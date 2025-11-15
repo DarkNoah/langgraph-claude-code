@@ -32,3 +32,19 @@
   "$schema": "http://json-schema.org/draft-07/schema#"
 }
 ```
+
+## Input Zod
+
+```js
+z.object({
+  bash_id: z
+    .string()
+    .describe("The ID of the background shell to retrieve output from"),
+  filter: z
+    .string()
+    .optional()
+    .describe(
+      "Optional regular expression to filter the output lines. Only lines matching this regex will be included in the result. Any lines that do not match will no longer be available to read."
+    ),
+});
+```

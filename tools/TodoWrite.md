@@ -203,12 +203,9 @@ When in doubt, use this tool. Being proactive with task management demonstrates 
           "status": {
             "type": "string",
             "enum": ["pending", "in_progress", "completed"]
-          },
-          "id": {
-            "type": "string"
           }
         },
-        "required": ["content", "status", "id"],
+        "required": ["content", "status"],
         "additionalProperties": false
       },
       "description": "The updated todo list"
@@ -226,12 +223,17 @@ When in doubt, use this tool. Being proactive with task management demonstrates 
 z.object({
   todos: z
     .array(
-      z.objcet({
+      z.object({
         content: z.string().min(1),
         status: z.enum(["pending", "in_progress", "completed"]),
-        id: z.string(),
       })
     )
     .describe("The updated todo list"),
 });
+```
+
+
+
+```回复
+Todos have been modified successfully. Ensure that you continue to use the todo list to track your progress. Please proceed with the current tasks if applicable
 ```

@@ -1,4 +1,4 @@
-name: Bash
+### Name: Bash
 
 description:
 
@@ -62,7 +62,7 @@ When the user asks you to create a new git commit, follow these steps carefully:
 
 - Add relevant untracked files to the staging area.
 - Create the commit with a message ending with:
-  \ud83e\udd16 Generated with [Claude Code](https://claude.ai/code)
+  🤖 Generated with [Claude Code](https://claude.ai/code)
 
 Co-Authored-By: Claude <noreply@anthropic.com>
 
@@ -83,7 +83,7 @@ Important notes:
   git commit -m "$(cat <<'EOF'
   Commit message here.
 
-  \ud83e\udd16 Generated with [Claude Code](https://claude.ai/code)
+  🤖 Generated with [Claude Code](https://claude.ai/code)
 
   Co-Authored-By: Claude <noreply@anthropic.com>
   EOF
@@ -117,7 +117,7 @@ IMPORTANT: When the user asks you to create a pull request, follow these steps c
 
 [Checklist of TODOs for testing the pull request...]
 
-\ud83e\udd16 Generated with [Claude Code](https://claude.ai/code)
+🤖 Generated with [Claude Code](https://claude.ai/code)
 EOF
 )"
 </example>
@@ -133,7 +133,7 @@ Important:
 - View comments on a Github PR: gh api repos/foo/bar/pulls/123/comments
 ```
 
-input_schema:
+## Input Schema:
 
 ```json
 {
@@ -171,4 +171,10 @@ Output: Creates directory 'foo'"
   "additionalProperties": false,
   "$schema": "http://json-schema.org/draft-07/schema#"
 }
+```
+
+## Input Zod
+
+```js
+
 ```

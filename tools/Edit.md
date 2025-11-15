@@ -44,3 +44,21 @@ input_schema:
   "$schema": "http://json-schema.org/draft-07/schema#"
 }
 ```
+
+## Input Zod
+
+```js
+z.object({
+  file_path: z.string().describe("The absolute path to the file to modify"),
+  old_string: z.string().describe("The text to replace"),
+  new_string: z
+    .string()
+    .describe(
+      "The text to replace it with (must be different from old_string)"
+    ),
+  replace_all: z
+    .boolean()
+    .default(false)
+    .describe("Replace all occurences of old_string (default false)"),
+});
+```

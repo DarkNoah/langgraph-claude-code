@@ -10,7 +10,7 @@ description:
 - Shell IDs can be found using the /bashes command
 ```
 
-input_schema:
+## Input Schema:
 
 ```json
 {
@@ -25,4 +25,12 @@ input_schema:
   "additionalProperties": false,
   "$schema": "http://json-schema.org/draft-07/schema#"
 }
+```
+
+## Input Zod
+
+```js
+z.object({
+  shell_id: z.string().describe("The ID of the background shell to kill"),
+});
 ```

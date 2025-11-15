@@ -1,0 +1,22 @@
+{
+  "name": "langgraph-claude-code",
+  "version": "1.0.0",
+  "description": "How to work",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DarkNoah/langgraph-claude-code.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DarkNoah/langgraph-claude-code/issues"
+  },
+  "homepage": "https://github.com/DarkNoah/langgraph-claude-code#readme",
+  "dependencies": {
+    "@anthropic-ai/claude-code": "^1.0.83"
+  }
+}
