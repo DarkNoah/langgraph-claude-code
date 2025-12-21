@@ -13,9 +13,9 @@ How to use skills:
 - When you invoke a skill, you will see <command-message>The "{name}" skill is loading</command-message>
 - The skill's prompt will expand and provide detailed instructions on how to complete the task
 - Examples:
- - `skill: "pdf"` - invoke the pdf skill
- - `skill: "xlsx"` - invoke the xlsx skill
- - `skill: "ms-office-suite:pdf"` - invoke using fully qualified name
+  - `skill: "pdf"` - invoke the pdf skill
+  - `skill: "xlsx"` - invoke the xlsx skill
+  - `skill: "ms-office-suite:pdf"` - invoke using fully qualified name
 
 Important:
 - Only use skills listed in <available_skills> below
@@ -179,6 +179,8 @@ plugin
 </location>
 </skill>
 </available_skills>
+
+
 ```
 
 
@@ -198,9 +200,9 @@ plugin
     "additionalProperties": false,
     "$schema": "http://json-schema.org/draft-07/schema#"
 }
+```
 
-
-```js
+```ts
 z.object({ skill: z.string().describe(`The skill name (no arguments). E.g., "pdf" or "xlsx"`)});
 ```
 

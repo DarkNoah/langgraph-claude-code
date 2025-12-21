@@ -7,5 +7,9 @@ export ANTHROPIC_BASE_URL=http://127.0.0.1:8080/api/anthropic
 
 export ANTHROPIC_AUTH_TOKEN=
 
+
+
+mitmweb --mode upstream:http://127.0.0.1:10809 -p 8080
 claude
 ```
+

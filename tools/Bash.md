@@ -178,3 +178,14 @@ Output: Creates directory 'foo'"
 ```js
 
 ```
+
+
+
+### 后台运行
+The script is now running in the background with shell ID afe9bb. You can use BashOutput to check its output whenever you need to see what's happening.
+
+
+### 如Bash后端有更新则提示
+<system-reminder>
+Background Bash afe9bb (command: node \"/Volumes/Data/workspace/langgraph-claude-code/scripts/time-display.js\") (status: running) Has new output available. You can check its output using the BashOutput tool.
+</system-reminder>

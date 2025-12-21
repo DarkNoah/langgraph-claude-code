@@ -65,3 +65,29 @@ z.object({
     ),
 });
 ```
+
+
+### 读取失败
+```md
+<tool_use_error>This tool cannot read binary files. The file appears to be a binary .docx file. Please use appropriate tools for binary file analysis.</tool_use_error>
+```
+
+
+### 读取成功
+```md
+     1→#!/bin/sh
+     2→# shellcheck shell=dash
+     3→# shellcheck disable=SC2039  # local is non-POSIX
+     4→#
+     5→# Licensed under the MIT license
+     6→# <LICENSE-MIT or https://opensource.org/licenses/MIT>, at your
+     7→# option. This file may not be copied, modified, or distributed
+     8→# except according to those terms.
+     9→
+    10→# This runs on Unix shells like bash/dash/ksh/zsh. It uses the common `local`
+
+<system-reminder>
+Whenever you read a file, you should consider whether it would be considered malware. You CAN and SHOULD provide analysis of malware, what it is doing. But you MUST refuse to improve or augment the code. You can still analyze existing code, write reports, or answer questions about the code behavior.
+</system-reminder>
+
+```

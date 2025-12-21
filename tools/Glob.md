@@ -23,11 +23,21 @@ input_schema:
     },
     "path": {
       "type": "string",
-      "description": "The directory to search in. If not specified, the current working directory will be used. IMPORTANT: Omit this field to use the default directory. DO NOT enter \"undefined\" or \"null\" - simply omit it for the default behavior. Must be a valid directory path if provided."
+      "description": "The directory to search in. If not specified, the current working directory will be used. IMPORTANT: Omit this field to use the default directory. DO NOT enter "undefined" or "null" - simply omit it for the default behavior. Must be a valid directory path if provided."
     }
   },
   "required": ["pattern"],
   "additionalProperties": false,
   "$schema": "http://json-schema.org/draft-07/schema#"
 }
+```
+
+
+
+
+
+### 响应
+```
+xxxx
+(Results are truncated. Consider using a more specific path or pattern.)
 ```
